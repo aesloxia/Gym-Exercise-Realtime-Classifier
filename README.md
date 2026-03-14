@@ -81,7 +81,7 @@ Table of exercises and support for test split
 
 ---
 
-## 🌲 Model 1: LightGBM
+## Model 1: LightGBM
 
 ### Architecture
 - Gradient boosting on decision trees with GridSearch and cross-validation
@@ -154,7 +154,7 @@ It also should be noted that bench press poor score can be related to the fact t
 
 This issue can be solved with bigger dataset, as most of the low-scored exercises have low support.
 
-## 🧠 Model 2: Custom CNN
+## Model 2: Custom CNN
 
 ### Architecture
 
