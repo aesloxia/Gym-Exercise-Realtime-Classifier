@@ -161,6 +161,7 @@ This issue can be solved with bigger dataset, as most of the low-scored exercise
 The idea is to use compact and effective structure, using depthwise convolutions, but instead of images, I used tensor of landmark-time dimensions, and the coords dimension was used as the channel dimension.
 Designed specifically for the (3, 10, 22) tensor format (channels×time×landmarks):
 
+```text
 Input: (batch, 3, 10, 22)  # (dimensions, time, landmarks)
     │
     ├─ MultiScaleTemporalBlock(3 → 30)
@@ -179,7 +180,7 @@ Input: (batch, 3, 10, 22)  # (dimensions, time, landmarks)
     ├─ Global Average Pooling
     ├─ Dropout(0.3)
     └─ Fully Connected (256 → 22) (three heads)
-
+```
 ### Model Size
 - Total parameters: 169k
 - Model size: 2.0 MB
